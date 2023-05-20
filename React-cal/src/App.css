@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(90deg, #36d1dc, #5b86e5);
+  background-size: 100%;
+  width: 100%;
+}
+/* Calculator page */
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 0;
+  margin: 30px 400px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+  max-width: 850px;
+}
+.cal {
+  box-shadow: 15px 20px 10px #000428;
+  max-width: 850px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f242d;
+  padding: 28rem 0;
+  margin: -15rem 7rem;
+  position: relative;
+  border: 3px solid #000428;
+  width: 100%;
+}
+.display {
+  border: 3px solid #6677;
+  text-align: left !important;
+  position: absolute;
+  left: 4.5rem;
+  top: 9rem;
+  background-color: #fff;
+  width: 50%;
+  padding: 2rem 16rem;
+}
+span {
+  margin-left: -13.5rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.row {
+  position: absolute;
+  max-width: 500px;
+  top: 25rem;
+  left: 4.5rem;
+  width: 70%;
+}
+.row .del {
+  position: absolute;
+  top: -6.5rem;
+  right: -4rem;
+}
+.row > .row-1,
+.row-2,
+.row-3,
+.row-4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background-image: linear-gradient(360deg, #000428, #004e92) !important;
+  background-size: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  font-size: 2rem;
+  box-shadow: 10px 10px 5px #000428;
+}
+.btn:hover {
+  font-size: 2.1rem;
+  transition: 1s ease all;
+}
+.btn:active {
+  background-color: rgb(182, 102, 73) !important;
+  font-size: 2.1rem;
+  transition: 1s ease all;
+}
+
+/* Media Queries */
+@media screen and (min-width: 914px) {
+  .cal {
+    width: 100%;
+    padding: 27rem 20rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .cal {
+    margin: 0 45rem !important;
+    top: -10rem;
+    padding: 27rem 20rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .cal {
+    margin: 0 45rem !important;
+    padding: 27rem 20rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cal {
+    margin: 0 45rem !important;
+    left: -15rem;
+    padding: 25.5rem 20rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .cal {
+    margin: 0 45rem !important;
+    left: -20rem;
+    padding: 25.5rem 18.5rem;
+  }
+  .display {
+    left: 2.5rem;
+  }
+  .row {
+    font-size: 1rem;
+    left: 1.9rem;
+  }
+  .row > .btn {
+    right: -7rem !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .cal {
+    padding: 25.5rem 16.5rem !important;
+    left: -22rem;
+  }
+  .row {
+    font-size: 0.1rem !important;
+    left: 1.9rem;
+  }
+  .display {
+    padding: 2rem 14rem;
+    left: 2rem;
+  }
+  span {
+    left: 5rem;
+  }
+  .row > .del {
+    font-size: 1.3rem !important;
+    right: 1.5rem;
+  }
+  .row-1 > .btn,
+  .row-2 > .btn,
+  .row-3 > .btn,
+  .row-4 > .btn {
+    font-size: 1.3rem !important;
+    margin-left: -0.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cal {
+    padding: 25.5rem 14rem !important;
+    left: -24.5rem;
+  }
+  .row {
+    font-size: -1rem !important;
+    left: 1.9rem;
+  }
+  .display {
+    padding: 2rem 12rem;
+    left: 2rem;
+  }
+  span {
+    right: 7rem;
+    margin-left: -11rem;
+  }
+  .row > .del {
+    font-size: 1.2rem !important;
+    padding: 1rem 2.4rem;
+    right: -5.5rem !important;
+  }
+  .row-1 > .btn,
+  .row-2 > .btn,
+  .row-3 > .btn,
+  .row-4 > .btn {
+    font-size: 1rem !important;
+    margin-left: -0.1rem;
+    padding: 1rem 2.4rem;
+  }
+}
